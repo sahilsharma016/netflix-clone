@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Netflix Clone</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: #fff;
+        }
+
+        header {
+            background: #000;
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999;
+        }
+
+        header a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        header ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .banner {
+            background: url('https://unsplash.com/photos/DwxlhTvC16Q') center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 48px;
+        }
+
+        .banner p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        .button {
+            display: inline-block;
+            background: #e50914;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .content {
+            padding: 50px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .movie {
+            flex: 1;
+            margin: 10px;
+        }
+
+        .movie img {
+            width: 100%;
+        }
+
+        .movie h2 {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <ul>
+                <li class="logo">Netflix</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">New & Popular</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="banner">
+        <div class="container">
+            <h1>Welcome to Netflix</h1>
+            <p>Watch unlimited TV shows and movies.</p>
+            <a href="#" class="button">Start your free trial</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Popular Movies</h2>
+        <div class="row">
+            <div class="movie">
+                <img src="https://unsplash.com/photos/DwxlhTvC16Q" alt="Movie 1">
+                <h2>Movie 1</h2>
+            </div>
+            <div class="movie">
+                <img src="https://unsplash.com/photos/CiUR8zISX60" alt="Movie 2">
+                <h2>Movie 2</h2>
+            </div>
+            <div class="movie">
+                <img src="https://unsplash.com/photos/aNrRsB2wLDk" alt="Movie 3">
+                <h2>Movie 3</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
